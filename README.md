@@ -371,7 +371,6 @@ WordPress default font stack is included as `wp-default`.
 - **CUSTOM_CSS_PATHS.md** - Custom path configuration examples
 - **ANTI_DUPLICATION_SYSTEM.md** - Technical overview of the anti-duplication system
 - **TERMINAL_GUIDANCE.md** - Enhanced terminal guidance features
-- **WARP.md** - AI assistant guidance for this repository
 
 **Quick References:**
 - **QUICK_START.md** - Fast setup reference
