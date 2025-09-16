@@ -3,11 +3,10 @@
 # WordPress Tailwind CSS Setup Script
 # This script sets up Tailwind CSS for WordPress themes and plugins
 
-echo "🎨 WordPress Tailwind CSS Setup"
-echo "================================"
+echo "🎨 WordPress Tailwind CSS Setup v2.0"
+echo "===================================="
+echo "✨ NEW: Custom CSS paths & Anti-duplication system"
 echo ""
-
-# Colors for output
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
@@ -55,8 +54,13 @@ print_status "WordPress root directory detected"
 print_status "Node.js and npm are available"
 
 echo ""
-echo "Welcome to WordPress Tailwind CSS Setup!"
-echo "This will set up Tailwind CSS for your WordPress theme and plugin."
+echo "🚀 Welcome to WordPress Tailwind CSS Setup v2.0!"
+echo "Features:"
+echo "  • 4 setup types: Both, Theme-only, Plugin-only, Shared CSS"
+echo "  • Custom CSS output paths (e.g., css/style.css, dist/main.css)"
+echo "  • Anti-duplication system for optimized CSS"
+echo "  • Smart compilation with context-aware styling"
+echo "  • Latest Tailwind CSS v3.4.12 with modern packages"
 echo ""
 
 # Run the Node.js setup script

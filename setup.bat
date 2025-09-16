@@ -2,8 +2,9 @@
 REM WordPress Tailwind CSS Setup Script for Windows
 REM This script sets up Tailwind CSS for WordPress themes and plugins
 
-echo 🎨 WordPress Tailwind CSS Setup
-echo ================================
+echo 🎨 WordPress Tailwind CSS Setup v2.0
+echo ====================================
+echo ✨ NEW: Custom CSS paths ^& Anti-duplication system
 echo.
 
 REM Check if we're in a WordPress root directory
@@ -41,8 +42,13 @@ if errorlevel 1 (
 echo ✅ WordPress root directory detected
 echo ✅ Node.js and npm are available
 echo.
-echo Welcome to WordPress Tailwind CSS Setup!
-echo This will set up Tailwind CSS for your WordPress theme and plugin.
+echo 🚀 Welcome to WordPress Tailwind CSS Setup v2.0!
+echo Features:
+echo   • 4 setup types: Both, Theme-only, Plugin-only, Shared CSS
+echo   • Custom CSS output paths (e.g., css/style.css, dist/main.css)
+echo   • Anti-duplication system for optimized CSS
+echo   • Smart compilation with context-aware styling
+echo   • Latest Tailwind CSS v3.4.12 with modern packages
 echo.
 
 REM Run the Node.js setup script

@@ -1,0 +1,36 @@
+# WordPress Tailwind Setup - .gitignore
+# This file prevents toolkit files from being committed to user projects
+
+# Warp AI files
+WARP.md
+
+# Node modules
+node_modules/
+
+# Generated CSS files (any CSS files in plugin/theme directories)
+wp-content/plugins/*/*.css
+wp-content/themes/*/*.css
+wp-content/plugins/*/css/*.css
+wp-content/themes/*/css/*.css
+wp-content/plugins/*/assets/css/*.css
+wp-content/themes/*/assets/css/*.css
+wp-content/plugins/*/dist/*.css
+wp-content/themes/*/dist/*.css
+wp-content/plugins/*/build/*.css
+wp-content/themes/*/build/*.css
+
+# Logs
+*.log
+npm-debug.log*
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
