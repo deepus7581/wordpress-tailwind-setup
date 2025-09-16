@@ -42,7 +42,6 @@ ls -la | grep wp-config.php  # Should exist
 ```
 
 ## 🚀 Quick Start
-## 🚀 Quick Start
 
 ### One-Command Setup (Recommended)
 ```bash
