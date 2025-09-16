@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom WordPress-specific styles */
+@layer base {
+  /* WordPress admin bar compatibility */
+  .admin-bar {
+    @apply pt-8;
+  }
+  
+  /* WordPress block editor compatibility */
+  .wp-block {
+    @apply max-w-none;
+  }
+}
+
+@layer components {
+  /* WordPress button styles */
+  .wp-button {
+    @apply bg-wp-blue text-white px-4 py-2 rounded hover:bg-wp-blue-dark transition-colors;
+  }
+  
+  .wp-button-secondary {
+    @apply bg-wp-gray text-wp-gray-dark px-4 py-2 rounded hover:bg-gray-200 transition-colors;
+  }
+  
+  /* WordPress form styles */
+  .wp-form {
+    @apply space-y-4;
+  }
+  
+  .wp-form input[type="text"],
+  .wp-form input[type="email"],
+  .wp-form input[type="password"],
+  .wp-form textarea {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-wp-blue focus:border-transparent;
+  }
+  
+  .wp-form label {
+    @apply block text-sm font-medium text-gray-700 mb-1;
+  }
+  
+  /* WordPress post styles */
+  .wp-post {
+    @apply bg-white rounded-lg shadow-md overflow-hidden;
+  }
+  
+  .wp-post-title {
+    @apply text-xl font-bold text-gray-900 mb-2;
+  }
+  
+  .wp-post-content {
+    @apply text-gray-700 leading-relaxed;
+  }
+  
+  .wp-post-meta {
+    @apply text-sm text-gray-500 mt-4;
+  }
+  
+  /* WordPress navigation styles */
+  .wp-nav {
+    @apply flex space-x-4;
+  }
+  
+  .wp-nav a {
+    @apply text-gray-700 hover:text-wp-blue transition-colors;
+  }
+  
+  .wp-nav .current-menu-item a {
+    @apply text-wp-blue font-semibold;
+  }
+}
+
+@layer utilities {
+  /* WordPress-specific utilities */
+  .wp-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .wp-sidebar {
+    @apply bg-gray-50 p-6 rounded-lg;
+  }
+  
+  .wp-widget {
+    @apply bg-white p-6 rounded-lg shadow-sm;
+  }
+  
+  .wp-widget-title {
+    @apply text-lg font-semibold text-gray-900 mb-4;
+  }
+}
