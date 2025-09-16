@@ -18,7 +18,7 @@ After running the setup (`npm run init`, `./setup.sh`, or `setup.bat`), you'll n
 ```bash
 🎨 WordPress Tailwind CSS Setup v2.0
 ====================================
-✨ Tailwind CSS v3.4.12 with latest packages
+✨ Tailwind CSS v4.1.13 with latest packages
 ```
 
 ### 3. **Setup Completion with Version**
@@ -26,7 +26,7 @@ After running the setup (`npm run init`, `./setup.sh`, or `setup.bat`), you'll n
 🎉 Setup Complete!
 ==================
 
-✅ All checks passed! Your Tailwind CSS v3.4.12 setup is ready.
+✅ All checks passed! Your Tailwind CSS v4.1.13 setup is ready.
 ```
 
 ### 4. **CSS Editing Guidance** (NEW!)
@@ -145,9 +145,9 @@ After running the setup (`npm run init`, `./setup.sh`, or `setup.bat`), you'll n
 - Get context-aware examples for your setup type
 
 ### ✅ **Version Transparency** 
-- Always know which Tailwind CSS version is installed
+- Always know which Tailwind CSS version is installed (v4.1.13)
 - System requirement compatibility checking
-- Modern package versions (v3.4.12 Tailwind CSS)
+- Modern package versions (v4.1.13 Tailwind CSS)
 
 ### ✅ **Context-Aware Instructions**
 - Different guidance for each setup type

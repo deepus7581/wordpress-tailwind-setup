@@ -12,7 +12,7 @@ const rl = readline.createInterface({
 
 console.log('🎨 WordPress Tailwind CSS Setup v2.0');
 console.log('====================================');
-console.log('✨ Tailwind CSS v3.4.12 with latest packages\n');
+console.log('✨ Tailwind CSS v4.1.13 with latest packages\n');
 
 // Setup type constants
 const SETUP_TYPES = {
@@ -69,7 +69,8 @@ function updatePackageJson(setupType, pluginFolder, themeFolder, sharedCSSPath, 
         "watch": `npm run watch:theme`,
         "watch:theme": `tailwindcss -i ./src/input.css -o ./wp-content/themes/${themeFolder}/${themeCSSPath} --watch`,
         "dev": "npm run watch",
-        "init": "node scripts/setup.js"
+        "init": "node scripts/setup.js",
+        "cleanup": "node scripts/cleanup.js"
       };
       break;
     
@@ -80,7 +81,8 @@ function updatePackageJson(setupType, pluginFolder, themeFolder, sharedCSSPath, 
         "watch": `npm run watch:plugin`,
         "watch:plugin": `tailwindcss -i ./src/input.css -o ./wp-content/plugins/${pluginFolder}/${pluginCSSPath} --watch`,
         "dev": "npm run watch",
-        "init": "node scripts/setup.js"
+        "init": "node scripts/setup.js",
+        "cleanup": "node scripts/cleanup.js"
       };
       break;
     
@@ -90,7 +92,8 @@ function updatePackageJson(setupType, pluginFolder, themeFolder, sharedCSSPath, 
         "build:prod": `NODE_ENV=production tailwindcss -i ./src/input.css -o ./${sharedCSSPath}/main.css --minify`,
         "watch": `tailwindcss -i ./src/input.css -o ./${sharedCSSPath}/main.css --watch`,
         "dev": "npm run watch",
-        "init": "node scripts/setup.js"
+        "init": "node scripts/setup.js",
+        "cleanup": "node scripts/cleanup.js"
       };
       break;
     
@@ -104,7 +107,8 @@ function updatePackageJson(setupType, pluginFolder, themeFolder, sharedCSSPath, 
         "watch:plugin": `tailwindcss -i ./src/plugin.css -o ./wp-content/plugins/${pluginFolder}/${pluginCSSPath} --watch`,
         "watch:theme": `tailwindcss -i ./src/theme.css -o ./wp-content/themes/${themeFolder}/${themeCSSPath} --watch`,
         "dev": "npm run watch",
-        "init": "node scripts/setup.js"
+        "init": "node scripts/setup.js",
+        "cleanup": "node scripts/cleanup.js"
       };
   }
   
@@ -896,9 +900,12 @@ function displayCSSEditingGuidance(setupType, pluginFolder, themeFolder) {
   
   console.log('');
   console.log('📄 **Documentation:**');
-  console.log('   - CSS_MANAGEMENT.md - Complete CSS guide');
-  console.log('   - CUSTOM_CSS_PATHS.md - Path customization examples');
+  console.log('   - docs/CSS_MANAGEMENT.md - Complete CSS guide');
+  console.log('   - docs/CUSTOM_CSS_PATHS.md - Path customization examples');
   console.log('   - README.md - Full documentation');
+  console.log('');
+  console.log('🧹 **Clean up toolkit files when done:**');
+  console.log('   npm run cleanup  # Removes setup files, keeps only your project');
 }
 
 // Function to check system requirements
@@ -953,7 +960,7 @@ async function setup() {
     }
     
     console.log('✅ WordPress root directory detected');
-    console.log('✨ Ready to install Tailwind CSS v3.4.12\n');
+    console.log('✨ Ready to install Tailwind CSS v4.1.13\n');
 
     // Get setup type
     const setupType = await askSetupType();
@@ -1038,7 +1045,7 @@ async function setup() {
     console.log('==================\n');
     
     if (verificationPassed) {
-      console.log('✅ All checks passed! Your Tailwind CSS v3.4.12 setup is ready.');
+      console.log('✅ All checks passed! Your Tailwind CSS v4.1.13 setup is ready.');
     } else {
       console.log('⚠️  Some checks failed. Please review the errors above.');
     }

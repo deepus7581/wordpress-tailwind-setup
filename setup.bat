@@ -48,7 +48,7 @@ echo   • 4 setup types: Both, Theme-only, Plugin-only, Shared CSS
 echo   • Custom CSS output paths (e.g., css/style.css, dist/main.css)
 echo   • Anti-duplication system for optimized CSS
 echo   • Smart compilation with context-aware styling
-echo   • Latest Tailwind CSS v3.4.12 with modern packages
+echo   • Latest Tailwind CSS v4.1.13 with modern packages
 echo.
 
 REM Run the Node.js setup script

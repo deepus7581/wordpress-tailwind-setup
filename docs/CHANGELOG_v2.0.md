@@ -6,16 +6,16 @@
 - **CSS Editing Guidance**: Detailed instructions after setup completion showing exactly which files to edit
 - **Quick Start Examples**: Ready-to-copy CSS examples tailored to your setup type
 - **System Requirements Check**: Automatic Node.js and npm version validation
-- **Version Transparency**: Always shows Tailwind CSS version (v3.4.12) in terminal output
+- **Version Transparency**: Always shows Tailwind CSS version (v4.1.13) in terminal output
 - **Context-Aware Instructions**: Different guidance for each setup type (Both/Theme/Plugin/Shared)
 
-### 🛠️ Latest Package Versions
-- **Tailwind CSS**: Updated to v3.4.12 (latest)
-- **PostCSS**: Updated to v8.4.47
-- **Autoprefixer**: Updated to v10.4.20  
+### 🔧 Latest Package Versions
+- **Tailwind CSS**: Updated to v4.1.13 (latest)
+- **PostCSS**: Updated to v8.5.6
+- **Autoprefixer**: Updated to v10.4.21  
 - **Concurrently**: Updated to v9.0.1
-- **@tailwindcss/forms**: Updated to v0.5.9
-- **@tailwindcss/typography**: Updated to v0.5.15
+- **@tailwindcss/forms**: Updated to v0.5.10
+- **@tailwindcss/typography**: Updated to v0.5.16
 
 ### ⚙️ System Requirements
 - **Node.js**: v18.0.0+ (LTS recommended)
@@ -33,7 +33,7 @@
 ✅ Node.js v18.17.0 (compatible)  
 ✅ npm v9.6.7 (compatible)
 ✅ WordPress root directory detected
-✨ Ready to install Tailwind CSS v3.4.12
+✨ Ready to install Tailwind CSS v4.1.13
 ```
 
 #### 2. **Smart CSS Editing Guide**
@@ -91,7 +91,7 @@ Next steps:
 ### After v2.0:
 ```bash
 🎉 Setup Complete!
-✅ All checks passed! Your Tailwind CSS v3.4.12 setup is ready.
+✅ All checks passed! Your Tailwind CSS v4.1.13 setup is ready.
 
 🎨 CSS Editing Guide:
 ====================
@@ -141,7 +141,7 @@ Next steps:
 - Context-aware guidance for each setup type
 
 ### ✅ **Version Transparency** 
-- Always see which Tailwind CSS version is installed (v3.4.12)
+- Always see which Tailwind CSS version is installed (v4.1.13)
 - System compatibility warnings for outdated Node.js/npm
 - Modern package versions for optimal performance
 

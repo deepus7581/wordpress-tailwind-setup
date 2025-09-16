@@ -18,10 +18,12 @@ A powerful, intelligent Tailwind CSS build system for WordPress with **anti-dupl
 - **WordPress**: v5.0 or higher
 
 ### Package Versions (Latest):
-- **Tailwind CSS**: v3.4.12
-- **PostCSS**: v8.4.47
-- **Autoprefixer**: v10.4.20
+- **Tailwind CSS**: v4.1.13
+- **PostCSS**: v8.5.6
+- **Autoprefixer**: v10.4.21
 - **Concurrently**: v9.0.1 (Both setup only)
+- **@tailwindcss/forms**: v0.5.10
+- **@tailwindcss/typography**: v0.5.16
 
 ### Operating Systems:
 - ✅ **macOS**: Full support (setup.sh)
@@ -171,6 +173,13 @@ npm run init             # Interactive setup
 ./setup.sh               # macOS/Linux one-command setup
 setup.bat                # Windows one-command setup
 ```
+
+### Cleanup (After Development):
+```bash
+npm run cleanup          # Remove toolkit files, keep only your project
+```
+**What it removes**: docs/, setup scripts, toolkit files  
+**What it keeps**: package.json, tailwind.config.js, src/, wp-content/, generated CSS
 
 ## 🎨 Smart CSS Management
 
@@ -366,15 +375,16 @@ WordPress default font stack is included as `wp-default`.
 
 ## 📚 Documentation
 
-**Included Guides:**
-- **CSS_MANAGEMENT.md** - Complete CSS management guide
-- **CUSTOM_CSS_PATHS.md** - Custom path configuration examples
-- **ANTI_DUPLICATION_SYSTEM.md** - Technical overview of the anti-duplication system
-- **TERMINAL_GUIDANCE.md** - Enhanced terminal guidance features
+**Included Guides (docs/ folder):**
+- **docs/CSS_MANAGEMENT.md** - Complete CSS management guide
+- **docs/CUSTOM_CSS_PATHS.md** - Custom path configuration examples
+- **docs/ANTI_DUPLICATION_SYSTEM.md** - Technical overview of the anti-duplication system
+- **docs/TERMINAL_GUIDANCE.md** - Enhanced terminal guidance features
+- **WARP.md** - AI assistant guidance for this repository
 
-**Quick References:**
-- **QUICK_START.md** - Fast setup reference
-- **INSTALLATION.md** - Detailed installation guide
+**Quick References (docs/ folder):**
+- **docs/QUICK_START.md** - Fast setup reference
+- **docs/INSTALLATION.md** - Detailed installation guide
 
 ## 🔗 External Resources
 
